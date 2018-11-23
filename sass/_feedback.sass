@@ -1,0 +1,54 @@
+.feedback
+  padding: 94px 0
+  background: url('../img/feedback/feedback-bg.jpeg') no-repeat center right -15%
+.form
+  max-width: 575px
+  &__title
+    font-size: 24px
+    +bold
+    line-height: 35px
+    margin-bottom: 45px
+  &__subtitle
+    display: block
+    margin-bottom: 50px
+  &__input
+    width: 270px
+    margin-bottom: 30px
+    &:first-child
+      margin-right: 30px
+  &__button
+    padding: 28px
+    display: block
+    width: 100%
+    font-size: 16px
+    margin-bottom: 31px
+  &__item
+    display: flex
+    align-items: center
+    &-text
+      width: 270px
+      margin-right: 30px 
+  &-advantages
+    display: flex
+    align-items: center
+    &__text
+      margin-bottom: 10px
+    &__img
+      min:
+        width: 40px
+        height: 40px
+      border: 2px solid $input-border
+        radius: 50%
+      margin-right: 20px
+      background:
+        size: 16px
+        repeat: no-repeat
+        position: center
+        image: url('../img/feedback/phone-receiver.png')
+  
+  &__phone
+    display: block
+    text-decoration: none
+    color: $text-color
+    +bold
+    font-size: 15px

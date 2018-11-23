@@ -20,20 +20,22 @@
   &-advantages
     display: flex
     flex-direction: column
-    max-width: 310px
+    max-width: 340px
     &__item
       display: flex
       align-items: center
       margin-bottom: 30px
     &__img
-      min-width: 40px
-      height: 40px
-      border-radius: 50%
+      min:
+        width: 40px
+        height: 40px
       border: 2px solid $primary-color
+        radius: 50%
       margin-right: 30px
-      background-size: 16px
-      background-repeat: no-repeat
-      background-position: center
+      background:
+        size: 16px
+        repeat: no-repeat
+        position: center
       &-1
         background-image: url('../img/main/clock.png')
       &-2
