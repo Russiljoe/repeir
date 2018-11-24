@@ -512,7 +512,21 @@ template {
 
 .feedback {
   padding: 94px 0;
-  background: url("../img/feedback/feedback-bg.jpeg") no-repeat center right -15%;
+  background: url("../img/feedback/feedback-bg.jpeg") no-repeat center left 1199px;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: -1;
 }
 
 .form {
@@ -526,9 +540,10 @@ template {
   margin-bottom: 45px;
 }
 
-.form__subtitle {
+.form__title span {
+  font-size: 20px;
   display: block;
-  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .form__input {
@@ -559,7 +574,7 @@ template {
 
 .form__item-text {
   width: 270px;
-  margin-right: 30px;
+  margin-right: 5%;
 }
 
 .form-advantages {
@@ -612,5 +627,96 @@ body {
 
 img {
   max-width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .feedback {
+    background: #ffffff;
+  }
+}
+
+@media (max-width: 768px) {
+  .headden-xs {
+    display: none;
+  }
+  .container {
+    width: 95%;
+  }
+  .header-text__city {
+    font-size: 10px;
+  }
+  .header-text__phone {
+    font-size: 14px;
+  }
+  .main {
+    padding: 30px 0;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    min-width: 400px;
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+  }
+  .feedback {
+    padding: 30px 0;
+  }
+  .form {
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 400px;
+  }
+  .header-logo {
+    display: none;
+  }
+  .header-text {
+    margin: auto;
+  }
+  .main-advantages {
+    margin: auto;
+  }
+  .main-text__title {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .form {
+    margin: 10px;
+  }
+  .form-advantages__img {
+    display: none;
+  }
+  .form__item-text {
+    margin-right: 10%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
