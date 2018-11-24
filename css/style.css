@@ -548,6 +548,7 @@ template {
 
 .form__input {
   width: 270px;
+  outline: none;
   margin-bottom: 30px;
 }
 
