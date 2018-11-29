@@ -20,7 +20,7 @@
         <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
       </div>
       <div class="header-text__button">
-        <button class="button">Перезвоните <span class="headden-xs">мне</span></button>
+        <button class="button" id="button-callback">Перезвоните <span class="headden-xs">мне</span></button>
       </div>
     </div><!-- header-text -->
   </div><!-- container -->
@@ -87,6 +87,39 @@
     </div><!-- form -->
   </div><!-- container -->
 </section><!-- feedback -->
+
+<div class="modal" id="modal-callback">
+  <div class="modal__dialog">
+    <div class="container">
+      <div class="container modal__item">
+        <h4 class="modal__title">Мод</h4>
+      </div>
+      <div class="container modal__item">
+        <h2>Узнайте точную стоимость ремонта по телефону!</h2>
+        <h3>Заполните поля ниже - мы свяжемся с Вами</h3>
+        <input type="text" class="input input-name modal__input" placeholder="Ваше имя">
+        <input type="tel" class="input input-tel modal__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <button type="submit" class="button modal__button">Получить бесплатный дизайн-проект</button>
+        <div class="modal__text">Или Вы можете перезвонить нам сами по телефону:</div>
+        <a class="form__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
+      </div>
+      <div class="modal__close">&#10006;</div>
+      
+    </div><!-- container -->
+  </div><!-- modal__dialog -->
+</div><!-- modal -->
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#button-callback').on('click', function() {
+      $('#modal-callback').toggleClass('modal_visible');
+    });
+    $('.modal__close').on('click', function() {
+      $('#modal-callback').toggleClass('modal_visible');
+    });
+  });
+</script>
 
 </body>
 </html>
