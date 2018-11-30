@@ -9,12 +9,98 @@
   top: 0
   z-index: 99
   display: none
-  &__item
+  &-wrap
+    display: flex
+  &-item
     display: block
     text-align: center
-    padding: 7%
-  &__input
-    width: 100%
+    padding: 0 3%
+    flex-basis: 50%
+    &__title
+      font-size: 24px
+      +bold
+      line-height: 35px
+      padding: 0 10% 10% 10%
+      span
+        font-size: 16px
+        display: block
+        margin-top: 50px
+    &__input
+      width: 85%
+      margin: 0 0 15px 0
+    &__button
+      width: 85%
+      font-size: 15px
+      padding: 26px
+      border: 1px solid $input-border
+        radius: 10px
+      margin: 0 0 30px 0
+    &__text
+      font-size: 15px
+      +Light
+      line-height: 20px
+      &-elem
+        text-align: left
+        font-size: 16px
+        font-weight: 400
+        margin-left: 10px
+        width: 200px
+        +bold
+        img
+          text-align: left
+          width: 20px
+        &2
+          text-align: left
+          font-size: 16px
+          font-weight: 400
+          line-height: 22px
+          +Medium
+          span
+            +bold
+        &3
+          text-align: left
+          font-size: 16px
+          font-weight: 400
+          line-height: 22px
+          +Medium
+          span
+            +bold
+      &-title
+        +bold
+        margin-left: 0
+        margin-top: 50px
+        font-size: 14px
+        font-weight: 400
+        line-height: 45px
+      &-ul
+        padding-left: 7px
+        margin-left: 10px
+        text-align: left
+        font-size: 17px
+        font-weight: 400
+        line-height: 25px
+        li
+          color: #ffd200
+          span
+            color: #000000
+    &__phone
+      padding: 10px 0 0 0
+      font-size: 24px
+      line-height: 24px
+      display: block
+      text-decoration: none
+      color: $text-color
+      +bold
+    &__img
+      margin-right: 15px
+      margin-bottom: 15px
+      width: 120px
+      height: 85px
+      display: flex
+      
+        
+      
+
   &_visible
     display: flex
   &__dialog

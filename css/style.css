@@ -407,14 +407,135 @@ template {
   display: none;
 }
 
-.modal__item {
-  display: block;
-  text-align: center;
-  padding: 7%;
+.modal-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.modal__input {
-  width: 100%;
+.modal-item {
+  display: block;
+  text-align: center;
+  padding: 0 3%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.modal-item__title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 35px;
+  padding: 0 10% 10% 10%;
+}
+
+.modal-item__title span {
+  font-size: 16px;
+  display: block;
+  margin-top: 50px;
+}
+
+.modal-item__input {
+  width: 85%;
+  margin: 0 0 15px 0;
+}
+
+.modal-item__button {
+  width: 85%;
+  font-size: 15px;
+  padding: 26px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin: 0 0 30px 0;
+}
+
+.modal-item__text {
+  font-size: 15px;
+  font-family: 'Museo Sans Light', sans-serif;
+  line-height: 20px;
+}
+
+.modal-item__text-elem {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+  width: 200px;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-item__text-elem img {
+  text-align: left;
+  width: 20px;
+}
+
+.modal-item__text-elem2 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: 'Museo Sans Medium', sans-serif;
+}
+
+.modal-item__text-elem2 span {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-item__text-elem3 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: 'Museo Sans Medium', sans-serif;
+}
+
+.modal-item__text-elem3 span {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-item__text-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  margin-left: 0;
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.modal-item__text-ul {
+  padding-left: 7px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.modal-item__text-ul li {
+  color: #ffd200;
+}
+
+.modal-item__text-ul li span {
+  color: #000000;
+}
+
+.modal-item__phone {
+  padding: 10px 0 0 0;
+  font-size: 24px;
+  line-height: 24px;
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.modal-item__img {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 120px;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal_visible {
