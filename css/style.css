@@ -800,11 +800,9 @@ template {
 }
 
 .portfolio {
-  background: url(../img/portfolio/Fon.png);
-  background-size: 63% auto;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
   padding: 100px 0;
+  background: url("../img/portfolio/Fon.png") center right;
+  background-size: 1500px;
 }
 
 .slider__item {
@@ -893,6 +891,9 @@ img {
   }
   .feedback {
     background: #ffffff;
+  }
+  .portfolio {
+    padding: 100px 0;
   }
 }
 
