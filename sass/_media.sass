@@ -1,6 +1,10 @@
-@media (max-width: 1199px)
+@media (max-width: 1990px)
   .container
     width: 970px
+  .slider
+    &__item
+      img
+        max-width: 95%
 
 @media (max-width: 1024px)
   .container
@@ -40,6 +44,14 @@
     flex-direction: column
     &__title
       text-align: center
+  .section
+    &-title
+      &_center
+        font-size: 24px
+        line-height: 35px
+        margin-bottom: 50px
+  .portfolio
+    padding-top: 30px
 
 @media (max-width: 425px)
   .container
@@ -101,12 +113,27 @@
           margin-top: 0
     &-wrap
       flex-direction: column
+  .section
+    &-title
+      &_center
+        font-size: 15px
+        line-height: 20px
+  .arrow
+    &_right
+      left: 60%
+
 
 
 @media (max-width: 375px)
   .container
     width: 350px
+  .arrow
+    &_left
+      margin-left: -25px
 
 @media (max-width: 320px)
   .container
     width: 300px
+  .arrow
+    &_left
+      margin-left: -15px

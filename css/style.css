@@ -390,65 +390,65 @@ template {
   border-radius: 10px;
 }
 
-.container {
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 99;
+}
+
+.modal-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.modal {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.52);
-  left: 0;
-  top: 0;
-  z-index: 99;
-  display: none;
-}
-
 .modal-item {
-  display: block;
   text-align: center;
-  padding: 75px 3%;
+  display: block;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding: 75px 3%;
 }
 
 .modal-item__tip {
-  display: block;
   text-align: center;
-  padding: 0 3%;
+  display: block;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding: 0 3%;
 }
 
 .modal-item__ul {
-  padding-left: 5%;
   list-style-type: none;
-  text-align: left;
+  padding-left: 5%;
   margin: 4% 5%;
-  width: 45px;
+  text-align: left;
   height: 2px;
+  width: 45px;
   background-color: orange;
 }
 
 .modal-item__title {
-  font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
-  line-height: 35px;
+  font-size: 24px;
   padding: 0 10% 10% 10%;
+  line-height: 35px;
 }
 
 .modal-item__title span {
-  font-size: 16px;
   display: block;
+  font-size: 16px;
   margin-top: 50px;
 }
 
 .modal-item__input {
-  width: 85%;
   margin: 0 0 15px 0;
+  width: 85%;
 }
 
 .modal-item__button {
@@ -799,6 +799,53 @@ template {
   font-size: 15px;
 }
 
+.portfolio {
+  background: url(../img/portfolio/Fon.png);
+  background-size: 63% auto;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__item img {
+  margin: auto;
+}
+
+.section-title_center {
+  margin-bottom: 100px;
+}
+
+.arrow {
+  width: 45px;
+  height: 19px;
+  position: absolute;
+  bottom: -68px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  text-align: center;
+}
+
+.arrow_right {
+  left: 55%;
+  background: url("../img/portfolio/arrow_right.png") no-repeat center;
+  background-size: 100%;
+}
+
+.arrow_left {
+  left: 53%;
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+  margin-left: -35px;
+  background: url("../img/portfolio/arrow_left.png") no-repeat center;
+  background-size: 100%;
+}
+
 *, *::after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -818,9 +865,21 @@ img {
   max-width: 100%;
 }
 
-@media (max-width: 1199px) {
+.section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 45px;
+}
+
+.section-title_center {
+  text-align: center;
+}
+
+@media (max-width: 1990px) {
   .container {
     width: 970px;
+  }
+  .slider__item img {
+    max-width: 95%;
   }
 }
 
@@ -878,6 +937,14 @@ img {
   }
   .form__title {
     text-align: center;
+  }
+  .section-title_center {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 50px;
+  }
+  .portfolio {
+    padding-top: 30px;
   }
 }
 
@@ -955,17 +1022,30 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .section-title_center {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .arrow_right {
+    left: 60%;
+  }
 }
 
 @media (max-width: 375px) {
   .container {
     width: 350px;
   }
+  .arrow_left {
+    margin-left: -25px;
+  }
 }
 
 @media (max-width: 320px) {
   .container {
     width: 300px;
+  }
+  .arrow_left {
+    margin-left: -15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
