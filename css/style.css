@@ -407,18 +407,30 @@ template {
   display: none;
 }
 
-.modal-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.modal-item {
+  display: block;
+  text-align: center;
+  padding: 75px 3%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
-.modal-item {
+.modal-item__tip {
   display: block;
   text-align: center;
   padding: 0 3%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+
+.modal-item__ul {
+  padding-left: 5%;
+  list-style-type: none;
+  text-align: left;
+  margin: 4% 5%;
+  width: 45px;
+  height: 2px;
+  background-color: orange;
 }
 
 .modal-item__title {
@@ -461,11 +473,6 @@ template {
   margin-left: 10px;
   width: 200px;
   font-family: 'Museo Sans Bold', sans-serif;
-}
-
-.modal-item__text-elem img {
-  text-align: left;
-  width: 20px;
 }
 
 .modal-item__text-elem2 {
@@ -546,7 +553,7 @@ template {
 
 .modal__dialog {
   width: auto;
-  height: 674px;
+  height: auto;
   background-color: #fff;
   margin: auto;
   display: -webkit-box;
@@ -922,6 +929,31 @@ img {
   .main-text__title {
     font-size: 25px;
     line-height: 20px;
+  }
+  .modal-item__title {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 5% 5% 5%;
+  }
+  .modal-item__title span {
+    font-size: 15px;
+    margin-top: 25px;
+  }
+  .modal-item__text-elem {
+    font-size: 13px;
+  }
+  .modal-item__text-ul {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .modal-item__text-title {
+    margin-top: 0;
+  }
+  .modal-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

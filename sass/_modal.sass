@@ -9,13 +9,24 @@
   top: 0
   z-index: 99
   display: none
-  &-wrap
-    display: flex
   &-item
     display: block
     text-align: center
-    padding: 0 3%
+    padding: 75px 3%
     flex-basis: 50%
+    &__tip
+      display: block
+      text-align: center
+      padding: 0 3%
+      flex-basis: 50%
+    &__ul
+      padding-left: 5%
+      list-style-type: none
+      text-align: left
+      margin: 4% 5%
+      width: 45px 
+      height: 2px
+      background-color: orange       
     &__title
       font-size: 24px
       +bold
@@ -46,9 +57,6 @@
         margin-left: 10px
         width: 200px
         +bold
-        img
-          text-align: left
-          width: 20px
         &2
           text-align: left
           font-size: 16px
@@ -97,15 +105,12 @@
       width: 120px
       height: 85px
       display: flex
-      
-        
-      
 
   &_visible
     display: flex
   &__dialog
     width: auto
-    height: 674px
+    height: auto
     background-color: #fff
     margin: auto
     display: flex
