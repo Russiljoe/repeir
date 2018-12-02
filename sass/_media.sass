@@ -5,8 +5,11 @@
     &__item
       img
         max-width: 95%
+  .modal
+    &-container
+      width: 70%
 
-@media (max-width: 1024px)
+@media (max-width: 992px)
   .container
     width: 900px
   .main
@@ -18,6 +21,30 @@
     background: #ffffff
   .portfolio
     padding: 100px 0
+  .modal
+    &-container
+      margin: auto
+      width: 75%
+    &-wrap
+      padding: 40px 0 0 40px
+      &__right
+        padding: 40px 40px 0 0
+    &-form
+      margin: 0 50px
+    &__title
+      line-height: 33px
+      margin-bottom: 52px
+      span
+        margin-bottom: 53px
+    &-text
+      &__title
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 25px
+    &-descr
+      margin-top: 10px
+      &__title
+        line-height: 10px
 
 @media (max-width: 768px)
   .headden-xs
@@ -54,8 +81,9 @@
         margin-bottom: 50px
   .portfolio
     padding-top: 30px
+  
 
-@media (max-width: 425px)
+@media (max-width: 650px)
   .container
     width: 400px
   .header
@@ -98,6 +126,7 @@
         line-height: 20px
   .modal
     &-item
+      padding: 3% 3%
       &__title
         font-size: 15px
         line-height: 20px
@@ -113,7 +142,7 @@
           line-height: 20px
         &-title
           margin-top: 0
-    &-wrap
+    &-container
       flex-direction: column
   .section
     &-title
