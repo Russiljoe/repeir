@@ -18,19 +18,13 @@
     display: flex
   &__dialog
     max-width: 1170px
-    height: 674px
+    height: auto
     background-color: #fff
     margin: auto
     display: flex
     justify-content: center
     align-items: center
     position: relative
-    @media (max-width: 768px)
-      margin: auto
-      flex-direction: column
-      height: 100%
-      align-content: space-around
-      overflow-y: scroll
   &__close
     position: absolute
     top: 5px
@@ -40,18 +34,10 @@
   &-wrap
     display: flex
     flex-direction: column
-    padding:
-      top: 80px
-      left: 80px
-      right: 80px
-      bottom: 80px
-    @media (max-width: 576px)
-      width: 100%
-      justify-content: center
-      padding:
-        left: 40px
-        top: 40px
-      align-content: space-between
+    padding: 70px 0 70px 70px
+    &__right
+      padding: 70px 70px 70px 0
+      width: 50%
     &__ul
       color: #ffd200
       margin: 0
@@ -59,19 +45,55 @@
     &__text
       align-self: center
     &__image
-      margin-right: 29px
+      margin-right: 13px
       width: 120px
-      height: 80px
+      height: 90px
   &-text
     &__price
       font-size: 16px
       margin-top: 12px
     &__title
       +medium
+      font-size: 16px
+    &__price
+      font-size: 16px
   &-item
     &__price
       span
         +bold
+    &__title
+      font-size: 22px
+      line-height: 33px
+      padding-bottom: 10%
+    &__subtitle
+      padding-bottom: 10%
+      font-size: 16px
+      line-height: 35px
+    &__content
+      text-align: center
+    &__input
+      font-size: 15px
+      padding: 26px
+      border: 1px solid $input-border
+        radius: 10px
+      width: 70%
+      margin-bottom: 15px
+    &__button
+      margin:
+        top: 15px
+        bottom: 20px
+      padding: 28px
+      width: 70%
+    &__text
+      margin: 13px 17%
+    &__block
+      margin: 10% 0
+    &__phone
+      display: block
+      text-decoration: none
+      color: $text-color
+      +bold
+      font-size: 20px
   &-form
     display: flex
     flex-direction: column
