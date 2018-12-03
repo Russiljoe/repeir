@@ -81,12 +81,10 @@
           Оставьте заявку на разработку бесплатного дизайн-проекта!
         </span>
       </h2>
-      <form action="#">
-        <input type="text" class="input input-name form__input" placeholder="Ваше имя">
-        <input type="tel" class="input input-tel form__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        <button type="submit" class="button form__button">
-          Получить бесплатный дизайн-проект
-        </button>
+      <form action="#" class="js-ajax">
+        <input type="text" name="fio" class="input input-name form__input" placeholder="Ваше имя">
+        <input type="tel" name="phone" class="input input-tel form__input" placeholder="7-ххх-хххх-ххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <button type="submit" class="button form__button">Получить бесплатный дизайн-проект</button>
       </form>
       <div class="form__item">
         <div class="form__text form__item-text">
@@ -106,7 +104,7 @@
   </div><!-- container -->
 </section><!-- feedback -->
 
-<div class="modal modal_hidden" id="modal-callback">
+<section class="modal modal_hidden" id="modal-callback">
   <div class="modal__dialog">
     <div class="modal__close">&#10006;</div>
     <div class="modal-container">
@@ -118,7 +116,7 @@
             </div>
             <div class="modal-wrap__text">
               <div class="modal-text__title">Ванная комната</div>
-              <ul class="modal-wrap__ul">
+              <ul>
                 <li></li>
               </ul>
               <div class="modal-item__price">135*150 - <span>31 000 руб.</span></div>
@@ -176,11 +174,11 @@
           Заполните поля ниже - мы свяжемся с Вами
         </h3>
         <div class="modal-item__content">
-          <input type="text" class="modal-item__input" placeholder="Ваше имя">
-        <input type="tel" class="modal-item__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        <button type="submit" class="button modal-item__button">
-          Получить бесплатный дизайн-проект
-        </button>
+          <form action="#" class="js-ajax">
+            <input type="text" name="fio"  class="modal-item__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="modal-item__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <button type="submit" class="button modal-item__button">Получить бесплатный дизайн-проект</button>
+          </form>
         </div>
         <div class="modal-item__text">
           Или Вы можете перезвонить нам сами по телефону:
@@ -189,7 +187,7 @@
       </div><!-- modal-item -->
     </div><!-- modal-wrap -->
   </div><!-- modal__dialog -->
-</div><!-- modal -->
+</section><!-- modal -->
 
 <section class="portfolio">
   <div class="container">
@@ -220,18 +218,78 @@
   </div><!-- container -->
 </section><!-- portfolio -->
 
-<script>
-  document.querySelector('#button-callback').addEventListener('click', function () {
-    document.querySelector('#modal-callback').classList.toggle('modal_visible');
-  })
-  document.querySelector('.modal__close').addEventListener('click', function () {
-    document.querySelector('#modal-callback').classList.toggle('modal_visible');
-  })
-</script>
+<section class="question">
+  <div class="container">
+    <div class="question-wrap">
+      <div class="question-wrap__elem question-wrap__elem1">
+        <div class="question-text question-text__left">
+          <h1 class="question-text__title">
+            Мы можем озвучить Вам примерную стоимость работы и материалов по телефону
+            <span>
+              Для этого нужно ответить на 4 вопроса:
+            </span>
+          </h1>
+          <div class="main-advantages">
+            <div class="main-advantages__item">
+              <div class="main-advantages__img main-advantages__img-1"></div>
+              <div class="main-advantages__text">
+                Точно соблюдаем сроки
+              </div>
+            </div><!-- main-advantages__item -->
+            <div class="main-advantages__item">
+              <div class="main-advantages__img main-advantages__img-2"></div>
+              <div class="main-advantages__text">
+                Рассчитаем смету на работы и материалы в день обращения
+              </div>
+            </div><!-- main-advantages__item -->    
+            <div class="main-advantages__item">
+              <div class="main-advantages__img main-advantages__img-3"></div>
+              <div class="main-advantages__text">
+                Предложим более 100 вариантов исполнения дизайна Вашего жилья
+              </div>
+            </div><!-- main-advantages__item -->
+            <div class="main-advantages__item">
+              <div class="main-advantages__img main-advantages__img-4"></div>
+              <div class="main-advantages__text">
+                Предложим более 100 вариантов исполнения дизайна Вашего жилья
+              </div>
+            </div><!-- main-advantages__item -->
+          </div><!-- main-advantages -->
+        </div><!-- question-text__left -->
+      </div><!-- question-wrap__elem1 -->
+      <div class="modal-wrap modal-wrap__right question-wrap__elem">
+        <div class="modal-form">
+          <h2 class="modal-item__title">
+            Оставьте заявку на бесплатный расчет ремонта по телефону
+          </h2>
+          <h3 class="modal-item__subtitle">
+            Для этого заполните форму ниже
+          </h3>
+          <div class="modal-item__content">
+            <form action="#" class="js-ajax">
+              <input type="text" name="fio"  class="modal-item__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="modal-item__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              <button type="submit" class="button modal-item__button">Получить бесплатный дизайн-проект</button>
+            </form><!-- js-ajax -->
+          </div>
+          <div class="modal-item__text">
+            Мы перезвоним Вам в течение 60 секунд
+          </div>
+        </div><!-- modal-item -->
+      </div><!-- modal-wrap -->
+    </div><!-- question-wrap -->
+  </div><!-- container -->
+</section><!-- question -->
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script>
+    document.querySelector('#button-callback').addEventListener('click', function () {
+    document.querySelector('#modal-callback').classList.toggle('modal_visible');
+  })
+    document.querySelector('.modal__close').addEventListener('click', function () {
+    document.querySelector('#modal-callback').classList.toggle('modal_visible');
+  })
   $(document).ready(function () {
     $('.slider').slick({
       slidesToShow: 3,
@@ -261,6 +319,22 @@
           }
         }
       ]
+    });
+    $('.js-ajax').on('submit', function(){    
+      var data = $('.js-ajax').serialize();
+
+      $.ajax({
+        url: 'mailer/smart.php',
+        data: data,
+        success: function(data){
+          if(data == 1)
+            alert("Сообщение доставлено");
+          else
+            alert("Проблемы на стороне сервера");
+        }
+      });
+      
+      return false;
     });
   });
 </script>
