@@ -1,6 +1,7 @@
 @media (max-width: 1990px)
   .container
     width: 970px
+    padding: 2%
   .slider
     &__item
       img
@@ -11,7 +12,7 @@
 
 @media (max-width: 992px)
   .container
-    width: 750px
+    width: auto
   .main
     &-text
       &__title
@@ -20,7 +21,7 @@
   .feedback
     background: #ffffff
   .portfolio
-    padding: 100px 0
+    padding: 100px 0 
   .modal
     &-container
       margin: auto
@@ -42,12 +43,15 @@
       margin-top: 10px
       &__title
         line-height: 10px
+  .question
+    width: auto
+    &-wrap
+      &__elem
+        padding: 0
 
 @media (max-width: 768px)
   .headden-xs
     display: none
-  .container
-    width: 95%
   .header
     &-text
       &__city
@@ -123,10 +127,21 @@
       left: 55%
     &_left
       left: 55%
+  .question
+    &-text
+      &__title
+        text-align: center
+    &-wrap
+      padding: 0
+      margin: 0
+      &__elem
+        padding: 0
+        max-width: 400px
+        margin: auto
+    &-form
+      padding: 0
 
 @media (max-width: 650px)
-  .container
-    width: 400px
   .header
     &-logo
       display: none
@@ -198,29 +213,24 @@
       &_center
         font-size: 20px
         line-height: 30px
-    .arrow
-      &_right
-        left: 60%
-      &_left
-        left: 60%
 
 @media (max-width: 375px)
-  .container
-    width: 350px
   .arrow
+    &_right
+      left: 60%
     &_left
-      margin-left: -25px
+      left: 60%
+  .header
+    &-text
+      &__phone
+        font-size: 10px
 
 @media (max-width: 320px)
-  .container
-    width: 300px
   .arrow
     &_left
       margin-left: -15px
   .modal
-    &-container
     &-item
-      &__title
       &__subtitle
         line-height: 20px
         margin: 10px 0
