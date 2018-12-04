@@ -9,14 +9,14 @@
   display: flex
   justify-content: space-around
   &-container
-    width: 50% 
-    height: 100%
     background-color: #f7f7f7
+    display: flex
   &_hidden
     display: none
   &_visible
     display: flex
   &__dialog
+    width: 98%
     max-width: 1170px
     height: auto
     background-color: #fff
@@ -32,12 +32,12 @@
     &:hover
       cursor: pointer
   &-wrap
+    width: 50%
     display: flex
     flex-direction: column
     padding: 70px 0 70px 70px
     &__right
       padding: 70px 70px 70px 0
-      width: 50%
     &__text
       align-self: center
       ul

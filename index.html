@@ -34,7 +34,7 @@
   </div><!-- container -->
 </header><!-- header -->
 
-<div class="main">
+<section class="main"> 
   <div class="container">
     <div class="main-wrap">
       <div class="main-text">
@@ -70,7 +70,7 @@
       </div>
     </div><!-- main-wrap -->
   </div><!-- container -->
-</div><!-- /.main -->
+</section><!-- /.main -->
 
 <section class="feedback">
   <div class="container">
@@ -81,11 +81,13 @@
           Оставьте заявку на разработку бесплатного дизайн-проекта!
         </span>
       </h2>
-      <form action="#" class="js-ajax">
+      <div class="modal-item__content">
+        <form action="#" class="js-ajax">
         <input type="text" name="fio" class="input input-name form__input" placeholder="Ваше имя">
         <input type="tel" name="phone" class="input input-tel form__input" placeholder="7-ххх-хххх-ххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
         <button type="submit" class="button form__button">Получить бесплатный дизайн-проект</button>
       </form>
+      </div>
       <div class="form__item">
         <div class="form__text form__item-text">
           Наш менеджер перезвонит Вам в течение 60 секунд
@@ -133,7 +135,7 @@
   </div><!-- container -->
 </section><!-- portfolio -->
 
-<div class="main question">
+<section class="main question">
   <div class="container question-container">
     <div class="main-wrap question-wrap">
       <div class="main-text question-text">
@@ -181,7 +183,7 @@
       </div><!-- modal-wrap modal-wrap__right question-wrap__elem -->
     </div><!-- main-wrap question-wrap -->
   </div><!-- container -->
-</div><!-- main question -->
+</section><!-- main question -->
 
 <section class="modal modal_hidden" id="modal-callback">
   <div class="modal__dialog">
@@ -243,28 +245,28 @@
           </div><!-- modal-descr__text -->
         </div><!-- modal-descr -->
       </div><!-- modal-wrap -->
+      <div class="modal-wrap modal-wrap__right">
+        <div class="modal-form">
+          <h2 class="modal-item__title">
+            Узнайте точную стоимость ремонта по телефону!<br>
+          </h2>
+          <h3 class="modal-item__subtitle">
+            Заполните поля ниже - мы свяжемся с Вами
+          </h3>
+          <div class="modal-item__content">
+            <form action="#" class="js-ajax">
+              <input type="text" name="fio" class="modal-item__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="modal-item__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              <button type="submit" class="button modal-item__button">Получить бесплатный дизайн-проект</button>
+            </form>
+          </div>
+          <div class="modal-item__text">
+            Или Вы можете перезвонить нам сами по телефону:
+          </div>
+          <a class="modal-item__phone" href="tel:+74954225131">+7 (8182) 42-51-31</a>
+        </div><!-- modal-item -->
+      </div><!-- modal-wrap -->
     </div><!-- modal-container -->
-    <div class="modal-wrap modal-wrap__right">
-      <div class="modal-form">
-        <h2 class="modal-item__title">
-          Узнайте точную стоимость ремонта по телефону!<br>
-        </h2>
-        <h3 class="modal-item__subtitle">
-          Заполните поля ниже - мы свяжемся с Вами
-        </h3>
-        <div class="modal-item__content">
-          <form action="#" class="js-ajax">
-            <input type="text" name="fio" class="modal-item__input" placeholder="Ваше имя">
-            <input type="tel" name="phone" class="modal-item__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-            <button type="submit" class="button modal-item__button">Получить бесплатный дизайн-проект</button>
-          </form>
-        </div>
-        <div class="modal-item__text">
-          Или Вы можете перезвонить нам сами по телефону:
-        </div>
-        <a class="modal-item__phone" href="tel:+74954225131">+7 (8182) 42-51-31</a>
-      </div><!-- modal-item -->
-    </div><!-- modal-wrap -->
   </div><!-- modal__dialog -->
 </section><!-- modal -->
 
