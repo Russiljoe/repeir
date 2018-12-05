@@ -931,7 +931,8 @@ template {
 
 .portfolio {
   padding: 100px 0;
-  background: url("../img/portfolio/Fon.png") no-repeat center left;
+  background-image: -webkit-repeating-radial-gradient(center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  background-size: 4px 4px;
 }
 
 .slider {
@@ -1038,6 +1039,59 @@ template {
 
 .question-advantages__img-4 {
   background-image: url("../img/question/4.png");
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.map {
+  -ms-flex-preferred-size: 53%;
+      flex-basis: 53%;
+  min-height: 640px;
+  background-color: #000;
+}
+
+.contacts {
+  margin: 100px 0;
+  margin-left: 130px;
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
+}
+
+.contacts-title {
+  margin-bottom: 100px;
+}
+
+.contacts-advantages__img {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts-advantages__img-1 {
+  background-image: url("../img/map/map-placeholder.png");
+}
+
+.contacts-advantages__img-2 {
+  background-image: url("../img/map/clock-with-white-face.png");
+}
+
+.contacts-advantages__img-3 {
+  background-image: url("../img/map/phone-call-button.png");
+}
+
+.contacts-advantages__text {
+  width: 150px;
 }
 
 *, *::after, *:before {
@@ -1161,6 +1215,9 @@ img {
   .main-text__title {
     text-align: center;
   }
+  .main-advantages {
+    max-width: 100%;
+  }
   .feedback {
     padding: 30px 0;
   }
@@ -1273,6 +1330,26 @@ img {
   }
   .price {
     padding: 30px 0;
+  }
+  .footer {
+    display: block;
+  }
+  .map {
+    max-height: 100%;
+  }
+  .contacts {
+    max-width: 400px;
+    margin: 30px auto;
+  }
+  .contacts-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .contacts-advantages {
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
