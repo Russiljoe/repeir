@@ -381,6 +381,12 @@
   new WOW().init();
 </script>
 <script>
+    document.querySelector('button-modal').addEventListener('click', function () {
+    yaCounter51450209.reachGoal('modal'); return true;
+  })
+    document.querySelector('callback-button').addEventListener('click', function () {
+    yaCounter51450209.reachGoal('btn'); return true;
+  })
     document.querySelector('#button-callback').addEventListener('click', function () {
     document.querySelector('#modal-callback').classList.toggle('modal_visible');
   })
@@ -433,14 +439,6 @@
       return false;
     });
   });
-</script>
-<script>
-  document.querySelector('button-modal').addEventListener('click', function () {
-    yaCounter51450209.reachGoal('modal'); return true;
-  })
-  document.querySelector('callback-button').addEventListener('click', function () {
-    yaCounter51450209.reachGoal('btn'); return true;
-  })
 </script>
 
 </body>
