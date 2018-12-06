@@ -531,7 +531,7 @@ template {
   padding: 26px;
   border: 1px solid #dddddd;
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
   margin-bottom: 15px;
 }
 
@@ -539,7 +539,7 @@ template {
   margin-top: 15px;
   margin-bottom: 20px;
   padding: 28px;
-  width: 80%;
+  width: 90%;
 }
 
 .modal-item__text {
@@ -830,7 +830,7 @@ template {
 }
 
 .feedback {
-  padding: 94px 0;
+  padding: 100px 0;
   background: url("../img/feedback/feedback-bg.jpeg") no-repeat center left 1199px;
   background-size: contain;
   position: relative;
@@ -931,8 +931,9 @@ template {
 
 .portfolio {
   padding: 100px 0;
-  background-image: -webkit-repeating-radial-gradient(center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
-  background-size: 4px 4px;
+  background: url("../img/portfolio/Fon.png") no-repeat center left;
+  background-size: 1215px;
+  background-color: #f5f5f5;
 }
 
 .slider {
@@ -961,13 +962,13 @@ template {
 }
 
 .arrow_right {
-  left: 55%;
+  left: 53%;
   background: url("../img/portfolio/arrow_right.png") no-repeat center;
   background-size: 100%;
 }
 
 .arrow_left {
-  left: 52%;
+  left: 53%;
   -webkit-transform: translateX(-80px);
           transform: translateX(-80px);
   margin-left: -35px;
@@ -976,22 +977,24 @@ template {
 }
 
 .question {
-  background-color: #ffc000;
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .question-wrap {
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.question-wrap__elem {
-  padding: 0;
+  background-image: url("../img/question/phone_question.png");
 }
 
 .question-text {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  background-color: #ffc000;
+  -ms-flex-preferred-size: 62%;
+      flex-basis: 62%;
+  padding-left: 23%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 10%;
 }
 
 .question-text__title {
@@ -1006,8 +1009,14 @@ template {
 }
 
 .question-form {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 49%;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-left: 10%;
+}
+
+.question-form__text {
+  margin: 13px 0;
 }
 
 .question-advantages__text {
@@ -1059,7 +1068,6 @@ template {
 .map {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
-  min-height: 54%;
   background-color: #000;
 }
 
@@ -1072,6 +1080,10 @@ template {
 
 .contacts-title {
   margin-bottom: 100px;
+}
+
+.contacts-advantages__item {
+  margin: 0;
 }
 
 .contacts-advantages__img {
@@ -1106,7 +1118,7 @@ template {
 }
 
 body {
-  width: 100%;
+  max-width: 100%;
   font-family: 'Museo Sans Light', sans-serif;
   color: #333333;
 }
@@ -1190,8 +1202,26 @@ img {
   .question {
     width: auto;
   }
+  .question-text {
+    padding-left: 2%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 2%;
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+  .question-form {
+    padding-right: 2%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 2%;
+  }
   .question-wrap__elem {
     padding: 0;
+  }
+  .map {
+    -ms-flex-preferred-size: 57%;
+        flex-basis: 57%;
   }
 }
 
@@ -1227,6 +1257,10 @@ img {
   .feedback {
     padding: 30px 0;
   }
+  .feedback-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
   .slider {
     padding: 30px 0;
   }
@@ -1239,8 +1273,14 @@ img {
     text-align: center;
   }
   .form__input {
-    width: 100%;
+    width: 80%;
     text-align: center;
+  }
+  .form__input:first-child {
+    margin-right: 0;
+  }
+  .form__button {
+    width: 80%;
   }
   .form__item {
     margin: 0 10%;
@@ -1311,16 +1351,26 @@ img {
     margin-bottom: 10%;
   }
   .arrow_right {
-    left: 60%;
+    left: 55%;
   }
   .arrow_left {
     left: 55%;
+  }
+  .question {
+    display: block;
+  }
+  .question-text {
+    padding: 30px 2%;
   }
   .question-text__title {
     text-align: center;
   }
   .question-text__title span {
     margin-top: 30px;
+  }
+  .question-text__elem-1 {
+    max-width: 400px;
+    margin: 0 auto;
   }
   .question-wrap {
     padding: 0;
@@ -1332,7 +1382,9 @@ img {
     margin: auto;
   }
   .question-form {
-    padding: 0;
+    padding: 30px 0;
+    max-width: 400px;
+    margin: 0 auto;
   }
   .price {
     padding: 30px 0;
@@ -1341,8 +1393,7 @@ img {
     display: block;
   }
   .map {
-    min-height: 400px;
-    max-height: 100%;
+    height: 400px;
   }
   .contacts {
     max-width: 400px;
@@ -1361,16 +1412,19 @@ img {
 }
 
 @media (max-width: 650px) {
-  .header-logo {
-    display: none;
+  .header-button {
+    padding: 10px 10px;
   }
   .header-text {
     margin: auto;
   }
-  .header-advantages {
+  .header-text__contacts {
+    margin-right: 10px;
+  }
+  .main-advantages {
     margin: auto;
   }
-  .header-text__title {
+  .main-text__title {
     font-size: 15px;
     line-height: 26px;
   }
@@ -1391,12 +1445,6 @@ img {
   }
   .form__phone {
     font-size: 14px;
-  }
-  .form__input {
-    width: 90%;
-  }
-  .form__button {
-    width: 90%;
   }
   .form__item-text {
     width: 200px;
@@ -1454,13 +1502,25 @@ img {
 
 @media (max-width: 375px) {
   .arrow_right {
-    left: 60%;
+    left: 55%;
   }
   .arrow_left {
-    left: 60%;
+    left: 55%;
   }
   .header-text__phone {
     font-size: 10px;
+  }
+  .header-button {
+    background-image: url(../img/map/phone-call-button.png);
+    padding: 15px 15px;
+    border: 2px solid #ffd200;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .headden-l {
+    display: none;
   }
 }
 
