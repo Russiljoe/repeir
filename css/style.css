@@ -841,7 +841,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 65%;
+  width: 55%;
   height: 100%;
   background-color: #ffffff;
   position: absolute;
@@ -1011,7 +1011,13 @@ template {
 }
 
 .question-advantages__text {
+  font-size: 16px;
+  line-height: 26px;
   font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.question-advantages__text span {
+  font-family: 'Museo Sans Medium', sans-serif;
 }
 
 .question-advantages__img {
@@ -1051,15 +1057,15 @@ template {
 }
 
 .map {
-  -ms-flex-preferred-size: 53%;
-      flex-basis: 53%;
-  min-height: 640px;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  min-height: 54%;
   background-color: #000;
 }
 
 .contacts {
   margin: 100px 0;
-  margin-left: 130px;
+  margin-left: 100px;
   -ms-flex-preferred-size: 42%;
       flex-basis: 42%;
 }
@@ -1335,6 +1341,7 @@ img {
     display: block;
   }
   .map {
+    min-height: 400px;
     max-height: 100%;
   }
   .contacts {
