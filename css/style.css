@@ -640,7 +640,7 @@ template {
 }
 
 .card {
-  max-width: 320px;
+  max-width: 333px;
   min-width: auto;
   text-align: center;
   padding-bottom: 47px;
@@ -841,7 +841,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 55%;
+  width: 64%;
   height: 100%;
   background-color: #ffffff;
   position: absolute;
@@ -1146,7 +1146,7 @@ img {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .container {
     width: auto;
   }
