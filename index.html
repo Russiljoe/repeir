@@ -30,7 +30,7 @@
         <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
       </div>
       <div class="header-text__button">
-        <button class="button" id="button-callback">
+        <button class="button" id="button-callback button-modal">
           Перезвоните
           <span class="headden-xs">
             мне
@@ -92,7 +92,7 @@
         <form action="#" class="js-ajax">
         <input type="text" name="fio" class="input input-name form__input" placeholder="Ваше имя">
         <input type="tel" name="phone" class="input input-tel form__input" placeholder="7-ххх-хххх-ххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        <button type="submit" class="button form__button">Получить бесплатный дизайн-проект</button>
+        <button type="submit" class="button form__button" id="callback-button">Получить бесплатный дизайн-проект</button>
       </form>
       </div>
       <div class="form__item">
@@ -247,7 +247,7 @@
             <form action="#" class="js-ajax">
               <input type="text" name="fio" class="modal-item__input" placeholder="Ваше имя">
               <input type="tel" name="phone" class="modal-item__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-              <button type="submit" class="button modal-item__button">Получить бесплатный дизайн-проект</button>
+              <button type="submit" class="button modal-item__button" id="callback-button">Получить бесплатный дизайн-проект</button>
             </form><!-- js-ajax -->
           </div>
           <div class="modal-item__text">
@@ -361,7 +361,7 @@
             <form action="#" class="js-ajax">
               <input type="text" name="fio" class="modal-item__input" placeholder="Ваше имя">
               <input type="tel" name="phone" class="modal-item__input" placeholder="7-ххх-ххх-хххх" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-              <button type="submit" class="button modal-item__button">Получить бесплатный дизайн-проект</button>
+              <button type="submit" class="button modal-item__button" id="callback-button">Получить бесплатный дизайн-проект</button>
             </form>
           </div>
           <div class="modal-item__text">
@@ -433,6 +433,14 @@
       return false;
     });
   });
+</script>
+<script>
+  document.querySelector('button-modal').addEventListener('click', function () {
+    yaCounter51450209.reachGoal('modal'); return true;
+  })
+  document.querySelector('callback-button').addEventListener('click', function () {
+    yaCounter51450209.reachGoal('btn'); return true;
+  })
 </script>
 
 </body>
