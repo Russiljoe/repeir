@@ -639,8 +639,19 @@ template {
           justify-content: center;
 }
 
+.price-title {
+  font-size: 30px;
+}
+
+.price-title span {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-size: 20px;
+  display: block;
+  padding: 60px 0;
+}
+
 .card {
-  max-width: 333px;
+  max-width: 310px;
   min-width: auto;
   text-align: center;
   padding-bottom: 47px;
@@ -937,6 +948,7 @@ template {
 }
 
 .slider {
+  padding-bottom: 80px;
   padding-top: 100px;
 }
 
@@ -953,7 +965,8 @@ template {
   width: 45px;
   height: 19px;
   position: absolute;
-  bottom: -68px;
+  bottom: -50px;
+  padding-bottom: 100px;
 }
 
 .arrow:hover {
@@ -1112,6 +1125,93 @@ template {
   width: 150px;
 }
 
+.repair-title {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.repair-title span {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-size: 20px;
+  display: block;
+  padding: 60px 0 0 0;
+}
+
+.repair-title-1 {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.repair-wrap-2 {
+  padding: 100px 0;
+}
+
+.repair-wrap-3 {
+  padding: 100px 0;
+  background-color: #ffc000;
+}
+
+.repair-elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.repair-elem__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.repair-elem__img {
+  min-width: 80px;
+  min-height: 80px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.repair-elem__img-0 {
+  min-width: 72px;
+  min-height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/Forma_1/elem-0.png");
+}
+
+.repair-elem__img-1 {
+  display: inline-table;
+  background-image: url("../img/Forma_1/elem-1.png");
+}
+
+.repair-elem__img-2 {
+  display: inline-table;
+  background-image: url("../img/Forma_1/elem-2.png");
+}
+
+.repair-elem__img-3 {
+  display: inline-table;
+  background-image: url("../img/Forma_1/elem-3.png");
+}
+
+.repair-elem__img-4 {
+  display: inline-table;
+  background-image: url("../img/Forma_1/elem-4.png");
+}
+
+.repair-elem__img-5 {
+  display: inline-table;
+  background-image: url("../img/Forma_1/elem-5.png");
+}
+
 *, *::after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1149,12 +1249,25 @@ img {
 
 @media (max-width: 1990px) {
   .container {
-    width: 1100px;
+    width: 1060px;
     padding-left: 1%;
     padding-right: 1%;
   }
   .slider__item img {
     max-width: 95%;
+  }
+  .question-text {
+    padding-left: 10%;
+  }
+  .question-form {
+    padding-right: 10%;
+  }
+  .contacts {
+    margin-left: 5%;
+  }
+  .map {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
 }
 
@@ -1220,8 +1333,14 @@ img {
     padding: 0;
   }
   .map {
-    -ms-flex-preferred-size: 57%;
-        flex-basis: 57%;
+    -ms-flex-preferred-size: 52%;
+        flex-basis: 52%;
+  }
+  .arrow_right {
+    left: 55%;
+  }
+  .arrow_left {
+    left: 55%;
   }
 }
 
@@ -1273,17 +1392,17 @@ img {
     text-align: center;
   }
   .form__input {
-    width: 80%;
+    width: 90%;
     text-align: center;
   }
   .form__input:first-child {
     margin-right: 0;
   }
   .form__button {
-    width: 80%;
+    width: 90%;
   }
   .form__item {
-    margin: 0 10%;
+    margin: 0 2%;
   }
   .section-title {
     font-size: 24px;
@@ -1350,6 +1469,9 @@ img {
     padding-top: 0;
     margin-bottom: 10%;
   }
+  .arrow {
+    bottom: -80px;
+  }
   .arrow_right {
     left: 55%;
   }
@@ -1409,6 +1531,19 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .repair-title-1 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .repair-wrap-1 {
+    display: none;
+  }
+  .repair-wrap-2 {
+    display: none;
+  }
+  .repair-wrap-3 {
+    padding: 30px 2%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1420,6 +1555,24 @@ img {
   }
   .header-text__contacts {
     margin-right: 10px;
+  }
+  .header-button {
+    background-image: url(../img/map/phone-call-button.png);
+    padding: 15px 15px;
+    border: 2px solid #ffd200;
+    background-color: ghostwhite;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .headden-l {
+    display: none;
+  }
+  .arrow_right {
+    left: 60%;
+  }
+  .arrow_left {
+    left: 60%;
   }
   .main-advantages {
     margin: auto;
@@ -1498,29 +1651,18 @@ img {
   .section-subtitle {
     font-size: 18px;
   }
+  .repair-title-1 {
+    font-size: 20px;
+  }
+  .price-title span {
+    font-size: 15px;
+    padding: 30px 0;
+  }
 }
 
 @media (max-width: 375px) {
-  .arrow_right {
-    left: 55%;
-  }
-  .arrow_left {
-    left: 55%;
-  }
   .header-text__phone {
     font-size: 10px;
-  }
-  .header-button {
-    background-image: url(../img/map/phone-call-button.png);
-    padding: 15px 15px;
-    border: 2px solid #ffd200;
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-  }
-  .headden-l {
-    display: none;
   }
 }
 
