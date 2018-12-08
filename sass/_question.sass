@@ -1,13 +1,16 @@
 .question
-  width: auto
-  display: flex
+  display: grid
+  grid-template-columns: 1.2fr 1fr
+  grid-template-rows: 660px
+  margin: 0
+  padding: 0
   &-wrap
     background-image: url('../img/question/phone_question.png')
   &-text
     background-color: $br-color
     flex-basis: 55%
     padding:
-      left: 23%
+      left: 40%
       top: 100px
       bottom: 100px
       right: 10%
@@ -20,7 +23,7 @@
         margin-top: 50px
   &-form
     padding:
-      right: 49%
+      right: 40%
       bottom: 100px
       top: 100px
       left: 10%
