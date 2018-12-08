@@ -1351,8 +1351,8 @@ img {
     padding-top: 100px;
     padding-bottom: 100px;
     padding-right: 2%;
-    -ms-flex-preferred-size: 75%;
-        flex-basis: 75%;
+    -ms-flex-preferred-size: 81%;
+        flex-basis: 81%;
   }
   .question-form {
     padding-right: 2%;
@@ -1544,9 +1544,6 @@ img {
   }
   .footer {
     display: block;
-  }
-  .map {
-    max-height: 400px;
   }
   .contacts {
     max-width: 400px;
