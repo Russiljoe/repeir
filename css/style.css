@@ -631,9 +631,6 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1154,6 +1151,11 @@ template {
   background-color: #ffc000;
 }
 
+.repair-wrap-6 {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
 .repair-elem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1229,6 +1231,16 @@ template {
 
 .repair-text__elem-1 span {
   font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.repair-text__elem-2 {
+  padding: 0;
+  border: 20px solid #f7f7f7;
+}
+
+.repair-text__elem-3 {
+  padding-top: 40px;
+  text-align: center;
 }
 
 .repair-text__img {
@@ -1560,7 +1572,7 @@ img {
   .repair-wrap-2 {
     display: none;
   }
-  .repair-wrap-3 {
+  .repair-wrap-3, .repair-wrap-4, .repair-wrap-5 {
     padding: 30px 2%;
   }
 }
