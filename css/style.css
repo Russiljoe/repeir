@@ -651,7 +651,7 @@ template {
 }
 
 .card {
-  max-width: 310px;
+  max-width: 290px;
   min-width: auto;
   text-align: center;
   padding-bottom: 47px;
@@ -842,7 +842,7 @@ template {
 
 .feedback {
   padding: 100px 0;
-  background: url("../img/feedback/feedback-bg.jpeg") no-repeat center left 1199px;
+  background: url("../img/feedback/feedback-bg.jpeg") no-repeat center left 100%;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -852,7 +852,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 64%;
+  width: 55%;
   height: 100%;
   background-color: #ffffff;
   position: absolute;
@@ -860,7 +860,7 @@ template {
 }
 
 .form {
-  max-width: 575px;
+  max-width: 55%;
 }
 
 .form__title {
@@ -877,7 +877,7 @@ template {
 }
 
 .form__input {
-  width: 270px;
+  width: 45%;
   outline: none;
   margin-bottom: 30px;
 }
@@ -1002,8 +1002,8 @@ template {
 
 .question-text {
   background-color: #ffc000;
-  -ms-flex-preferred-size: 62%;
-      flex-basis: 62%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
   padding-left: 23%;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1145,7 +1145,7 @@ template {
   line-height: 50px;
 }
 
-.repair-wrap-2 {
+.repair-wrap-2, .repair-wrap-4 {
   padding: 100px 0;
 }
 
@@ -1212,6 +1212,29 @@ template {
   background-image: url("../img/Forma_1/elem-5.png");
 }
 
+.repair-text__elem {
+  border: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.repair-text__elem-1 {
+  font-family: 'Museo Sans Light', sans-serif;
+  height: 150px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 23px;
+  padding: 5%;
+}
+
+.repair-text__elem-1 span {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.repair-text__img {
+  margin: 0;
+}
+
 *, *::after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1247,9 +1270,9 @@ img {
   padding: 50px;
 }
 
-@media (max-width: 1990px) {
+@media (max-width: 1920px) {
   .container {
-    width: 1060px;
+    width: 990px;
     padding-left: 1%;
     padding-right: 1%;
   }
@@ -1264,10 +1287,6 @@ img {
   }
   .contacts {
     margin-left: 5%;
-  }
-  .map {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
   }
 }
 
@@ -1333,8 +1352,8 @@ img {
     padding: 0;
   }
   .map {
-    -ms-flex-preferred-size: 52%;
-        flex-basis: 52%;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
   }
   .arrow_right {
     left: 55%;
@@ -1515,7 +1534,7 @@ img {
     display: block;
   }
   .map {
-    height: 400px;
+    max-height: 400px;
   }
   .contacts {
     max-width: 400px;
