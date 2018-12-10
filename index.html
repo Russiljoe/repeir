@@ -594,7 +594,7 @@
     $('.js-ajax').on('submit', function(){    
       var data = $('.js-ajax').serialize();
       $.ajax({
-        url: 'mailer/smart.php',
+        url: 'mailer\smart.php',
         data: data,
         success: function(data){
           if(data == 1)

@@ -940,7 +940,7 @@ template {
 .portfolio {
   padding: 100px 0;
   background: url("../img/portfolio/Fon.png") no-repeat center left;
-  background-size: 1215px;
+  background-size: 55%;
   background-color: #f5f5f5;
 }
 
@@ -1314,6 +1314,7 @@ img {
     background: #ffffff;
   }
   .portfolio {
+    background-size: 100%;
     padding: 100px 0;
   }
   .modal-container {
