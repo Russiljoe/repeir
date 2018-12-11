@@ -25,17 +25,20 @@
     display: flex
     justify-content: center
     text-align: center
+    &-1
+      padding-bottom: 30px
     &__text
       font-size: 14px
       line-height: 20px
+      +bold
     &__img
       min:
-        width: 80px
-        height: 80px
-      border: 2px solid #ffd200
+        width: 100px
+        height: 100px
+      border: 3px solid #ffd200
         radius: 50%
       background:
-        size: 30px
+        size: 35px
         repeat: no-repeat
         position: center
       &-0
@@ -63,10 +66,6 @@
         background-image: url('../img/Forma_1/elem-5.png')
   &-text
     &__elem
-      margin: 0
-      margin-bottom: 40px
-      margin-left: 40px
-      margin-right: 40px
       border: 0
       padding: 0
       background-color: #f7f7f7
@@ -80,10 +79,12 @@
         span
           +bold
       &-2
+        margin-left: 45px
+        margin-right: 45px
         padding: 0
-        border: 30px solid #f7f7f7
+        border: 25px solid #f7f7f7
       &-3
         padding: 40px 0
         text-align: center
     &__img
-      margin: 0    
+      margin: 0
