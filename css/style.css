@@ -1192,6 +1192,12 @@ template {
   background-image: url("../img/Forma_1/elem-0.png");
 }
 
+@media (max-width: 992px) {
+  .repair-elem__img-0 {
+    display: none;
+  }
+}
+
 .repair-elem__img-1 {
   display: inline-table;
   background-image: url("../img/Forma_1/elem-1.png");
@@ -1215,10 +1221,6 @@ template {
 .repair-elem__img-5 {
   display: inline-table;
   background-image: url("../img/Forma_1/elem-5.png");
-}
-
-.repair-text {
-  width: 147px;
 }
 
 .repair-text__elem {
@@ -1250,6 +1252,10 @@ template {
 .repair-text__elem-3 {
   padding: 40px 0;
   text-align: center;
+}
+
+.repair-text__elem-4 {
+  width: 157px;
 }
 
 .repair-text__img {
