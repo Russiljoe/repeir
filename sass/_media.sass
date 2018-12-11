@@ -1,6 +1,6 @@
 @media (max-width: 1920px)
   .container
-    width: 990px
+    max-width: -webkit-fill-available
     padding:
       left: 1% 
       right: 1%
@@ -9,7 +9,7 @@
       img
         max-width: 95%
   .contacts
-    margin-left: 5%
+    padding-left: 13%
     &-advantages
 
 @media (max-width: 1024px)
@@ -20,6 +20,8 @@
       &__title
         font-size: 30px
         line-height: 36px
+    &-image
+      position: static
   .feedback
     background: #ffffff
   .portfolio
@@ -95,7 +97,7 @@
   .feedback
     padding: 30px 0
     &-container
-      max-width: 400px
+      max-width: 450px
       margin: 0 auto
   .slider
     padding: 30px 0
@@ -133,9 +135,10 @@
     &-item
       &__title
         font-size: 20px
-        padding: 0
-      &__subtitle
-        padding: 0
+        padding-bottom: 30px
+        margin: 0
+        span
+          padding-top: 30px
       &__price
         font-size: 14px
       &__input
@@ -175,29 +178,28 @@
         span
           margin-top: 30px
       &__elem-1
-        max-width: 400px
+        max-width: 450px
         margin: 0 auto
     &-wrap
       padding: 0
       margin: 0
       &__elem
         padding: 0
-        max-width: 400px
+        max-width: 450px
         margin: auto
     &-form
       padding: 30px 0
-      max-width: 400px
+      max-width: 450px
       margin: 0 auto
   .price
     padding: 30px 0
   .footer
     display: block
   .contacts
-    max-width: 400px
-    margin: 30px auto
+    padding: 30px 0
     &-title
+      padding: 30px 0
       text-align: center
-      margin-bottom: 30px
     &-advantages
       max-width: 100%
       align-items: center
@@ -218,6 +220,8 @@
         padding: 
           top: 30px
           bottom: 60px
+  .contacts
+    padding-left: 0
     
 @media (max-width: 650px)
   .header
@@ -235,6 +239,8 @@
       background-repeat: no-repeat
       background-position: center
       border-radius: 50%
+  .portfolio
+    background-size: auto
   .headden-l
     display: none
   .arrow

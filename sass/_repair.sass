@@ -1,5 +1,6 @@
 .repair
   &-title
+    margin: 0
     font-size: 30px
     line-height: 45px
     text-align: center
@@ -14,14 +15,12 @@
       font-size: 32px
       line-height: 50px
   &-wrap
-    &-2, &-4
+    &-2
+      padding: 0 0 100px 0
+    &-4, &-3, &-6
       padding: 100px 0
     &-3
-      padding: 100px 0
       background-color: #ffc000
-    &-6
-      padding-top: 100px
-      padding-bottom: 200px
   &-elem
     display: flex
     justify-content: center
@@ -64,6 +63,10 @@
         background-image: url('../img/Forma_1/elem-5.png')
   &-text
     &__elem
+      margin: 0
+      margin-bottom: 40px
+      margin-left: 40px
+      margin-right: 40px
       border: 0
       padding: 0
       background-color: #f7f7f7
@@ -78,7 +81,7 @@
           +bold
       &-2
         padding: 0
-        border: 20px solid #f7f7f7
+        border: 30px solid #f7f7f7
       &-3
         padding: 40px 0
         text-align: center
